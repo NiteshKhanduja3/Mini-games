@@ -1,10 +1,7 @@
  #pong games
 
-
-
-
 import turtle
-
+import time
 
 wn = turtle.Screen()
 wn.title("Pong game by Nitesh")
@@ -85,6 +82,7 @@ wn.onkeypress(sidebar_b_down, "Down")
 # Main game loop
 while True:
     wn.update()
+    time.sleep(1/100)
     
     # Move the ball
     ball.setx(ball.xcor() + ball.dx)
